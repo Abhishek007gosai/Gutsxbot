@@ -33,7 +33,7 @@ class Txt(object):
 ➻ Tʜɪs Bᴏᴛ Aʟsᴏ Sᴜᴘᴘᴏʀᴛs Cᴜsᴛᴏᴍ Tʜᴜᴍʙɴᴀɪʟ Aɴᴅ Cᴜsᴛᴏᴍ Cᴀᴘᴛɪᴏɴ.    
 ➻ Usᴇ  /tutorial Cᴏᴍᴍᴀɴᴅ Tᴏ Kɴᴏᴡ Hᴏᴡ Tᴏ Usᴇ Mᴇ.</blockquote>
     
-Bᴏᴛ Is Mᴀᴅᴇ Bʏ @EternalsHelplineBot.</b>"""
+Bᴏᴛ Is Mᴀᴅᴇ Bʏ @EternalsHelplineBot</b>"""
     
     FILE_NAME_TXT = """<b><u>SETUP AUTO RENAME FORMAT</u></b>
 
