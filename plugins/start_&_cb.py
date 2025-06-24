@@ -10,13 +10,13 @@ async def start(client, message):
     user = message.from_user
     await madflixbotz.add_user(client, message)                
     button = InlineKeyboardMarkup([[
-      InlineKeyboardButton('ᴍᴏʀᴇ ᴄʜᴀɴɴᴇʟs', url='https://t.me/AnimeNexusNetwork/158'),
-      InlineKeyboardButton('sᴜᴘᴘᴏʀᴛ', url='https://t.me/EternalsHelplineBot')
+      InlineKeyboardButton("ᴍᴏʀᴇ ᴄʜᴀɴɴᴇʟs", url="https://t.me/AnimeNexusNetwork/158"),
+      InlineKeyboardButton("sᴜᴘᴘᴏʀᴛ", url="https://t.me/EternalsHelplineBot")
     ],[
-      InlineKeyboardButton('ʜᴇʟᴘ', callback_data='help'),
-      InlineKeyboardButton('ᴀʙᴏᴜᴛ', callback_data='about')
+      InlineKeyboardButton("ʜᴇʟᴘ", callback_data="help"),
+      InlineKeyboardButton("ᴀʙᴏᴜᴛ", callback_data="about")
     ],[
-        InlineKeyboardButton("ᴏᴡɴᴇʀ", url='https://t.me/EternalsHelplineBot')
+        InlineKeyboardButton("ᴏᴡɴᴇʀ", url="https://t.me/EternalsHelplineBot")
     ]])
     if Config.START_PIC:
         await message.reply_photo(Config.START_PIC, caption=Txt.START_TXT.format(user.mention), reply_markup=button)       
@@ -33,13 +33,13 @@ async def cb_handler(client, query: CallbackQuery):
             text=Txt.START_TXT.format(query.from_user.mention),
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup([[
-                InlineKeyboardButton('ᴍᴏʀᴇ ᴄʜᴀɴɴᴇʟs', url='https://t.me/AnimeNexusNetwork/158'),
-                InlineKeyboardButton('sᴜᴘᴘᴏʀᴛ', url='https://t.me/EternalsHelplineBot')
+                InlineKeyboardButton("ᴍᴏʀᴇ ᴄʜᴀɴɴᴇʟs", url="https://t.me/AnimeNexusNetwork/158"),
+                InlineKeyboardButton("sᴜᴘᴘᴏʀᴛ", url="https://t.me/EternalsHelplineBot")
              ],[
-                InlineKeyboardButton('ʜᴇʟᴘ', callback_data='help'),
-                InlineKeyboardButton('ᴀʙᴏᴜᴛ', callback_data='about')
+                InlineKeyboardButton("ʜᴇʟᴘ", callback_data="help"),
+                InlineKeyboardButton("ᴀʙᴏᴜᴛ", callback_data="about")
              ],[
-                InlineKeyboardButton("ᴏᴡɴᴇʀ", url='https://t.me/EternalsHelplineBot')
+                InlineKeyboardButton("ᴏᴡɴᴇʀ", url="https://t.me/EternalsHelplineBot")
              ]])
             
     elif data == "caption":
@@ -56,13 +56,13 @@ async def cb_handler(client, query: CallbackQuery):
             text=Txt.HELP_TXT.format(client.mention),
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup([[
-                InlineKeyboardButton("ᴀᴜᴛᴏ ʀᴇɴᴀᴍᴇ ғᴏʀᴍᴀᴛ", callback_data='file_names')
+                InlineKeyboardButton("ᴀᴜᴛᴏ ʀᴇɴᴀᴍᴇ ғᴏʀᴍᴀᴛ", callback_data="file_names")
                 ],[
-                InlineKeyboardButton('ᴛʜᴜᴍʙɴᴀɪʟ', callback_data='thumbnail'),
-                InlineKeyboardButton('ᴄᴀᴘᴛɪᴏɴ', callback_data='caption')
+                InlineKeyboardButton("ᴛʜᴜᴍʙɴᴀɪʟ", callback_data="thumbnail"),
+                InlineKeyboardButton("ᴄᴀᴘᴛɪᴏɴ", callback_data="caption")
                 ],[
-                InlineKeyboardButton('ʜᴏᴍᴇ', callback_data='home'),
-                InlineKeyboardButton('ᴅᴏɴᴀᴛᴇ', callback_data='donate')
+                InlineKeyboardButton("ʜᴏᴍᴇ", callback_data="home"),
+                InlineKeyboardButton("ᴅᴏɴᴀᴛᴇ", callback_data="donate")
                 ]])
         )
     elif data == "donate":
