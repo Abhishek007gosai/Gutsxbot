@@ -41,7 +41,7 @@ async def cb_handler(client, query: CallbackQuery):
              ],[
                 InlineKeyboardButton("ᴏᴡɴᴇʀ", url="https://t.me/EternalsHelplineBot")
              ]])
-            
+        ) 
     elif data == "caption":
         await query.message.edit_text(
             text=Txt.CAPTION_TXT,
